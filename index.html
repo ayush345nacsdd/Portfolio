@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Yadav | Portfolio</title>
+  
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Ayush Yadav</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <img src="git.jpg" alt="Ayush Yadav" class="profile-photo mb-4">
+      <h1 class="fw-bold">Hello, I'm <span class="highlight">Ayush</span></h1>
+      <p class="lead">Full Stack Developer | AI & Data Science Enthusiast</p>
+      <a href="#projects" class="btn btn-warning btn-lg m-2">View My Work</a>
+      <a href="assets/resume.pdf" target="_blank" class="btn btn-outline-light btn-lg m-2">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">About Me</h2>
+      <p class="mx-auto w-75">
+        I’m a passionate Full Stack Developer skilled in building responsive, 
+        user-friendly web applications. I love solving real-world problems 
+        with clean and efficient code.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-sm h-100">
+            <img src="quiz_app.png" class="card-img-top" alt="Project 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Quiz app</h5>
+              <p class="card-text">A beginner-friendly quiz application built using HTML, CSS, and JavaScript. This project demonstrates DOM manipulation, event handling, and basic logic implementation in JavaScript.</p>
+              <a href="https://ayush345nacsdd.github.io/Quiz-app/" target="_blank" class="btn btn-sm btn-warning">Live Demo</a>
+              <a href="https://github.com/ayush345nacsdd/Quiz-app.git" target="_blank" class="btn btn-sm btn-dark">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Another Project -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-sm h-100">
+            <img src="images/project2.png" class="card-img-top" alt="Project 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Project Title</h5>
+              <p class="card-text">Short description of the project, technologies used.</p>
+              <a href="#" target="_blank" class="btn btn-sm btn-warning">Live Demo</a>
+              <a href="#" target="_blank" class="btn btn-sm btn-dark">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Skills</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <ul class="list-inline fs-5">
+            <li class="list-inline-item badge bg-dark m-2 p-2">HTML</li>
+            <li class="list-inline-item badge bg-dark m-2 p-2">CSS</li>
+            <li class="list-inline-item badge bg-dark m-2 p-2">JavaScript</li>
+            <li class="list-inline-item badge bg-dark m-2 p-2">React</li>
+            <li class="list-inline-item badge bg-dark m-2 p-2">Node.js</li>
+            <li class="list-inline-item badge bg-dark m-2 p-2">MongoDB</li>
+            <li class="list-inline-item badge bg-dark m-2 p-2">MySQL</li>
+            <li class="list-inline-item badge bg-dark m-2 p-2">Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Contact</h2>
+      <p>Email: <a href="mailto:youremail@example.com" class="text-decoration-none">youremail@example.com</a></p>
+      <p>
+        <a href="https://github.com/yourusername" target="_blank" class="btn btn-outline-dark m-2">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="btn btn-outline-primary m-2">LinkedIn</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Ayush Yadav | All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

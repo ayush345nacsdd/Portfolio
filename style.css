@@ -1,0 +1,172 @@
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar-dark .nav-link {
+  color: #ddd;
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+
+.navbar-dark .nav-link:hover {
+  color: #4CAF50; /* light green */
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px; /* Offset for fixed navbar */
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero h1 .highlight {
+  color: #e2d166; /* green accent */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Buttons (Bootstrap Overrides) ===== */
+.btn-warning {
+  background-color: #88eb8b !important;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #67e26e !important; /* darker green */
+}
+
+.btn-outline-dark:hover,
+.btn-outline-primary:hover {
+  background-color: #7ede81;
+  color: #fff;
+  border-color: #4CAF50;
+}
+
+/* ===== Section Headings ===== */
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #0072ff;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* ===== About Section ===== */
+#about p {
+  font-size: 1.05rem;
+  max-width: 700px;
+}
+
+/* ===== Projects Section ===== */
+.card {
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  border-radius: 12px 12px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ===== Skills Section ===== */
+#skills .badge {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+  background: #222;
+  color: #fff;
+}
+
+#skills .badge:hover {
+  background: #74e878;
+}
+
+/* ===== Contact Section ===== */
+#contact a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+  font-size: 0.9rem;
+  background: #222;
+  color: #ddd;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
